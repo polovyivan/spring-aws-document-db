@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "90912988-cf09-4824-af87-9eb22e8d131f",
+		"name": "spring-aws-document-db",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9825253"
+	},
+	"item": [
+		{
+			"name": "/customers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8001/spring-aws-document-db/v1/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"spring-aws-document-db",
+						"v1",
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/customers/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8001spring-aws-document-db/v1/customers/6449db0bf34d260ae4544ce6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001spring-aws-document-db",
+					"path": [
+						"v1",
+						"customers",
+						"6449db0bf34d260ae4544ce6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/customers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"phoneNumber\":\"12345\",\n        \"fullName\":\"Ivan Polovyi\",\n        \"address\":\"address\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8001/spring-aws-document-db/v1/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"spring-aws-document-db",
+						"v1",
+						"customers"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

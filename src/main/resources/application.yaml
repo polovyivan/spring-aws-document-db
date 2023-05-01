@@ -1,0 +1,22 @@
+server:
+  port: 8001
+  servlet:
+    context-path: /spring-aws-document-db
+
+document-db:
+  user: tutorialUser
+  password: tutorialPassword
+  connection-string-template: mongodb://%s:%s@%s:%s/%s?directConnection=true&serverSelectionTimeoutMS=2000&tlsAllowInvalidHostnames=true&tls=true
+  host: 127.0.0.1
+  port: 27017
+  db-name: tutorial-db
+
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: DEBUG
+
